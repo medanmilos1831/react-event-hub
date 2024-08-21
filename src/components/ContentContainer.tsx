@@ -9,7 +9,12 @@ const ContentContainer = () => {
       setCounter(data);
     },
   });
-  return <>ContentContainer {counter}</>;
+  return (
+    <div className="contentContainer">
+      <h1>ContentContainer Component</h1>
+      <span>Listen 'someEvent' event {counter}</span>
+    </div>
+  );
 };
 
 export { ContentContainer };

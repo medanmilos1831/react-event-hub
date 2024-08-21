@@ -4,8 +4,8 @@ const SideBar = () => {
   const { fireEvent } = useFireEvent();
   let x = 1;
   return (
-    <>
-      SideBar
+    <div className="sideBar">
+      <h1>SideBar Component</h1>
       <button
         type="button"
         onClick={() => {
@@ -13,9 +13,9 @@ const SideBar = () => {
           fireEvent('someEvent', x);
         }}
       >
-        generate event
+        generate event called 'someEvent'
       </button>
-    </>
+    </div>
   );
 };
 
