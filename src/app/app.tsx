@@ -1,14 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import { ReactEventHubProvider } from 'src/ReactEventHub';
+import { PageOne } from 'src/pages';
 
-import NxWelcome from './nx-welcome';
-
-export function App() {
+const App = () => {
   return (
-    <div>
-      <NxWelcome title="react-event-hub" />
-    </div>
+    <ReactEventHubProvider>
+      <PageOne />
+    </ReactEventHubProvider>
   );
-}
+};
 
-export default App;
+export { App };
